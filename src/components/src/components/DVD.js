@@ -9,9 +9,7 @@ export default class DVD extends React.Component {
      this.comic=props.comic
     }
      
-    
-    //render this component (Comic.js) inside ComicList.js
-    //Look at Past JS Projects
+
     
      render() {
          console.log(this.DVD)
