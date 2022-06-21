@@ -13,7 +13,7 @@ export default class DVDList extends React.Component {
     }
 
     fetchComics = async () => {
-        const DVD = await getComics();
+        const DVD = await getDVD();
         this.setState({ DVD });
     };
 
@@ -50,8 +50,8 @@ export default class DVDList extends React.Component {
                 onClick={() => this.createDVD({ title: this.state.newTitle})}>
                 update
             </button>
-            <div className = "comics-list">
-                {this.state.comics.map((comic) => {
+            <div className = "DVD-list">
+                {this.state.DVD.map((DVD) => {
                     return (
                         <DVD DVD = {DVD}/>
                     )

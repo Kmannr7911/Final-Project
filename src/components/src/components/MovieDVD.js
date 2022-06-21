@@ -62,7 +62,7 @@ export default class DVDList extends React.Component {
             </div>
             <button type='delete'
                 onClick={() => this.createDVD({ title: this.state.newTitle})}>
-                delete
+                update
             </button>
             </form>
             </div>

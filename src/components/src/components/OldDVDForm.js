@@ -37,7 +37,7 @@ export default class DVDList extends React.Component {
     render() {
         return (
             <div>
-            <h1>DVDs</h1>
+            <h1>OldDVDs</h1>
             <form>
                 <input
                     type='text'
@@ -50,8 +50,8 @@ export default class DVDList extends React.Component {
                 onClick={() => this.createDVD({ title: this.state.newTitle})}>
                 update
             </button>
-            <div className = "DVD-list">
-                {this.state.DVD.map((DVD) => {
+            <div className = "OldDVD-list">
+                {this.state.OldDVD.map((DVD) => {
                     return (
                         <DVD DVD = {DVD}/>
                     )
